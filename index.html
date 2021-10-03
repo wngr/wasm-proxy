@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  </head>
+  <body>
+    <script type="module">
+      import init, { Document } from './pkg/wasm_proxy.js';
+
+      async function run() {
+        await init();
+
+        window.doc = new Document();
+      }
+      run();
+    </script>
+  </body>
+<html>
